@@ -1,13 +1,16 @@
 import * as fs from "fs";
 import * as path from "path";
 import * as process from "process";
-import * as Either from "./either";
-import * as Maybe from "./maybe";
-import { psRequire } from "./require";
+
+import * as Either from "Data.Either";
+import * as Maybe from "Data.Maybe";
+
 import * as _ from "lodash";
 
-const Main: Main = psRequire("Main");
-const Renderers: Renderers = psRequire("Language.Renderers");
+import * as Main from "Main";
+import { Config } from "Config";
+import { Renderer } from "Doc";
+import * as Renderers from "Language.Renderers";
 
 const makeSource = require("stream-json");
 const Assembler = require("stream-json/utils/Assembler");

@@ -3,6 +3,7 @@
   "version": "0.10.0",
   "license": "Apache-2.0",
   "repository": "https://github.com/quicktype/quicktype",
+  "types": "@types",
   "scripts": {
     "pub": "script/publish.sh",
     "prepare": "npm run build",
@@ -38,6 +39,8 @@
     "typescript": "^2.4.2",
     "uglify-js": "^3.0.26"
   },
-  "files": ["*"],
+  "files": [
+    "*"
+  ],
   "bin": "quicktype.js"
 }
