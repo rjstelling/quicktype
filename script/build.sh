@@ -11,5 +11,3 @@ echo "#!/usr/bin/env node" > $BIN.bak
 cat $BIN >> $BIN.bak
 mv $BIN.bak $BIN
 
-# Distribute TypeScript typings
-cp cli/*.d.ts output/

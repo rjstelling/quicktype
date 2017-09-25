@@ -11,6 +11,9 @@ import * as Main from "Main";
 import { Config } from "Config";
 import { Renderer } from "Doc";
 import * as Renderers from "Language.Renderers";
+import * as Swift from "Language.Swift";
+
+console.log(Swift.swift3Renderer.names);
 
 const makeSource = require("stream-json");
 const Assembler = require("stream-json/utils/Assembler");

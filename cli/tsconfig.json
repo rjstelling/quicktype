@@ -3,6 +3,13 @@
     "target": "es5",
     "lib": ["es2015"],
     "outDir": "../output",
-    "typeRoots": ["../node_modules/@types"]
-  }
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": ["../@types", "../node_modules/@types"],
+    "paths": {
+      "*": ["*", "../output/*"]
+    }
+  },
+  "include": ["*.ts", "../@types/*.d.ts"]
 }
