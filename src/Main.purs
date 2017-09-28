@@ -38,7 +38,6 @@ main json = do
     graph <- normalizeGraphOrder <$> execIR do
         makeTypes samples
         T.replaceSimilarClasses
-        T.makeMaps
         modify regatherClassNames
 
         -- We don't regatherClassNames for schemas
