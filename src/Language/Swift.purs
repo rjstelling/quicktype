@@ -504,7 +504,7 @@ renderType variant = case _ of
         Swift3 -> pure "Any?"
     IRNull ->
         case variant of
-        Swift4 -> pure "JSONNull"
+        Swift4 -> pure "JSONNull?"
         Swift3 -> pure "NSNull"
     IRInteger -> pure "Int"
     IRDouble -> pure "Double"
